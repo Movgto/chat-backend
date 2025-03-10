@@ -1,6 +1,6 @@
 import { Socket } from "socket.io"
-import { CreateRoomArgs, JoinRoomArgs, SendMessageArgs } from "../types/room"
-import Room from "../classes/Room"
+import { CreateRoomArgs, JoinRoomArgs, SendMessageArgs } from "../types/room.js"
+import Room from "../classes/Room.js"
 
 class RoomController {
 

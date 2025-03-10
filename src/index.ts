@@ -1,7 +1,7 @@
 import express from 'express'
-import { createServer } from 'node:http'
+import { createServer } from 'http'
 import { Server } from 'socket.io'
-import RoomController from './controllers/RoomController'
+import RoomController from './controllers/RoomController.js'
 
 const app = express()
 const server = createServer(app)

@@ -1,7 +1,7 @@
-import { io } from '../index'
-import { User } from "../types"
-import { CreateRoomArgs } from "../types/room"
-import { Message } from '../types/room'
+import { io } from '../index.js'
+import { User } from "../types/index.js"
+import { CreateRoomArgs } from "../types/room.js"
+import { Message } from '../types/room.js'
 
 class Room {
     id: string
