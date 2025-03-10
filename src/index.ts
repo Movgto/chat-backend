@@ -59,7 +59,11 @@ io.on('connection', (socket) => {
 
     socket.on('joinRoom', (args, cb) => {
         console.log('Join a room request received')
-        RoomController.joinRoom(socket, args, cb)
+        try {
+            RoomController.joinRoom(socket, args, cb)
+        } catch (error) {
+            console.log('Error joining room: ', error)            
+        }
     })
 
     socket.on('sendMessage', (args, cb) => {
